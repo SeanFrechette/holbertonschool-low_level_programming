@@ -13,18 +13,15 @@ int main(void)
 		{
 			for (z = '0' ; z <= '9' ; z++)
 			{
-				if (z > y)
+				if (z > y && y > x)
 				{
-					if (y > x)
+					putchar(x);
+					putchar(y);
+					putchar(z);
+					if (x != '7' || y != '8' || z != '9')
 					{
-						putchar(x);
-						putchar(y);
-						putchar(z);
-						if (x != '7' || y != '8' || z != '9')
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
