@@ -15,14 +15,14 @@ int main(void)
 			{
 				for (z = '0' ; z <= '9' ; z++)
 				{
-					if (w > y || x > z)
+					if (w <= y && x <= z && x <= y && !(w == y && x == z))
 					{
-						putchar(y);
-						putchar(z);
-						putchar(' ');
 						putchar(w);
 						putchar(x);
-						if (y != '9' || z != '8' || w != '9' || x != '9')
+						putchar(' ');
+						putchar(y);
+						putchar(z);
+						if (w != '9' || x != '8' || y != '9' || z != '9')
 						{
 							putchar(',');
 							putchar(' ');
