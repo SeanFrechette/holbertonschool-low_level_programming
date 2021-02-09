@@ -1,14 +1,12 @@
 #include "holberton.h"
 /**
  * _islower - checks if lowercase
- *
+ * @c: input
  * Return: 1 if lower, 0 otherwise
  */
 int _islower(int c)
 {
-	int ch = c;
-
-	if (ch <= 'z' && ch >= 'a')
+	if (c <= 'z' && c >= 'a')
 	{
 		return (1);
 	}
