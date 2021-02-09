@@ -1,4 +1,4 @@
-#include "holbeton.h"
+#include "holberton.h"
 /**
  * _isalpha - finds if c is a letter
  * @c: input
@@ -6,9 +6,8 @@
  */
 int _isalpha(int c)
 {
-	int ch = c;
 
-	if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z')
+	if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
