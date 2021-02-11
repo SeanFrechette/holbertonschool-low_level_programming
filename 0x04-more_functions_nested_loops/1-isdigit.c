@@ -1,4 +1,4 @@
-#include "holbeton.h"
+#include "holberton.h"
 /**
  * _isdigit - checks for digit 0-9
  * @c: input
@@ -6,7 +6,7 @@
  */
 int _isdigit(int c)
 {
-	if (c >= 0 && c <= 9)
+	if (c >= '0' && c <= '9')
 	{
 		return (1);
 	}
