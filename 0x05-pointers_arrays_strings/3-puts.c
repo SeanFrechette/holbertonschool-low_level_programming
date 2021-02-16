@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _puts - prints a string followed by a newline
- * @str - string input
+ * @str: string input
  */
 void _puts(char *str)
 {
