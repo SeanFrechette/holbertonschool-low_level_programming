@@ -14,7 +14,7 @@ void rev_string(char *s)
 	}
 	char temp[x];
 
-	for (x--; x >= 0 ; x--)
+	for (x-- ; x >= 0 ; x--)
 	{
 		temp[i] = s[x];
 		i++;
