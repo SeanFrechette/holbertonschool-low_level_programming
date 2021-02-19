@@ -7,7 +7,7 @@
 char *cap_string(char *a)
 {
 	int i = 0, x = 0;
-	char *sep = " \t \n,;.!?\"\(\)\{\}";
+	char sep[] = ",\t\n ;.!?\"(){}";
 	
 	while (a[i] != '\0')
 	{

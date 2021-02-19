@@ -1,0 +1,25 @@
+#include "holberton.h"
+/**
+ * leet - encoded a string in leet speak
+ * @a: input
+ * Return: encoded string
+ */
+char *leet(char *a)
+{
+	int x = 0, y = 0;
+	char alpha[] = "aeotlAEOTL";
+	char num[] = "43071"
+
+	while (a[x] != '\0')
+	{
+		for (y = 0; alpha[y] != '\0'; y++)
+		{
+			if (a[x] == alpha[y])
+			{
+				a[x] = alpha[y];
+			}
+		}
+		x++;
+	}
+	return (x);
+}
