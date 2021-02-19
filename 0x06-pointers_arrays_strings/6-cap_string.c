@@ -6,20 +6,23 @@
  */
 char *cap_string(char *a)
 {
-	int i = 0, x = 0;
-	char sep[] = ",\t\n ;.!?\"(){}";
+	int i = 0, x;
+	char sep[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '\"', '(', ')', '{', '}'};
 	
 	while (a[i] != '\0')
 	{
 		if (a[i] >= 'a' && a[i] <= 'z')
 		{
-			while (sep[x] != '\0')
+			for (x = 0; sep[x] != '\0'; x++)
 			{
+				if (sep[0] >= 'a' && s[0] <= 'z')
+				{
+					s[0] = s[0] - 32;
+				}
 				if (sep[x] == a[i - 1])
 				{
 					a[i] = a[i] - 32;
 				}
-				x++;
 			}
 		}
 		i++;
