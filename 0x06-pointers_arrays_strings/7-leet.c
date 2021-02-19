@@ -9,7 +9,7 @@ char *leet(char *a)
 	int x = 0, y = 0;
 	char alpha[] = "aeotl";
 	char upperAlpha[] = "AEOTL";
-	char num[] = "43071"
+	char num[] = "43071";
 
 	while (a[x] != '\0')
 	{
@@ -22,5 +22,5 @@ char *leet(char *a)
 		}
 		x++;
 	}
-	return (x);
+	return (a);
 }
