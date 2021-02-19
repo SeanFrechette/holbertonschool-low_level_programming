@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
-   * rot13 - check the code for Holberton School students.
-    *@n: the variable
-     *Return: n variable
-      */
+ * rot13 - encodes a string with rot13
+ * @a: input
+ * Return: a
+ */
 char *rot13(char *a)
 {
 	int x, y;
