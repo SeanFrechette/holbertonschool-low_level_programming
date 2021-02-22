@@ -16,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[x] == accept[y])
 				break;
 		}
-		if (accept == '\0')
+		if (accept[y] == '\0')
 		{
 			break;
 		}
