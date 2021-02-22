@@ -14,10 +14,10 @@ char *_strpbrk(char *s, char *accept)
 		for (y = 0; accept[y]; y++)
 		{
 			if (s[x] == accept[y])
-				break:
+				break;
 		}
 		if (accept[y] != '\0')
-			return (s + x)
+			return (s + x);
 	}
 	return ('\0');
 }
