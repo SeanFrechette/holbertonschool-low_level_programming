@@ -7,7 +7,7 @@
  */
 int find_length(char *s)
 {
-    if (!(*s))
+	if (!(*s))
 		return (0);
 	else
 		return (1 + find_length(s + 1));
@@ -21,11 +21,11 @@ int find_length(char *s)
  */
 int helper_palindrome(char *s, int length)
 {
-    if (*s != *(s + length - 1))
-        return (0);
-    else if (!(*s))
-        return (1);
-    return (helper_palindrome(s + 1, length - 2));
+	if (*s != *(s + length - 1))
+		return (0);
+	else if (!(*s))
+		return (1);
+	return (helper_palindrome(s + 1, length - 2));
 }
 
 /**
@@ -35,6 +35,6 @@ int helper_palindrome(char *s, int length)
  */
 int is_palindrome(char *s)
 {
-    int length = find_length(s);
-    return (helper_palindrome(s, length));
+	int length = find_length(s);
+	return (helper_palindrome(s, length));
 }
