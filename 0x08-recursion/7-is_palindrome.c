@@ -12,6 +12,7 @@ int find_length(char *s)
 	else
 		return (1 + find_length(s + 1));
 }
+
 /**
  * helper_palindrome - finds if s is a palindrome
  * @s: string input
