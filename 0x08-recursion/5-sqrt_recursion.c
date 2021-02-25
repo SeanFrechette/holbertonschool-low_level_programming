@@ -3,7 +3,7 @@
  * sqrtHelper - executes math for _sqrt_recursion
  * @n: number to sqrt
  * @i: iterator
- * Return: returns the natural sqrt of n, or -1 if one doesn't exist
+ * Return: the natural sqrt of n, or -1 if one doesn't exist
  */
 int sqrtHelper(int n, int i)
 {
