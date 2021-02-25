@@ -1,4 +1,10 @@
 #include "holberton.h"
+/**
+ * is_prime - finds if n is prime
+ * @n: number input
+ * @i: iterator
+ * Return: 1 if prime, 0 otherwise
+ */
 int is_prime(int n, int i)
 {
     if (n == i)
@@ -7,6 +13,7 @@ int is_prime(int n, int i)
         return (0);
     return (is_prime(n, i + 1));
 }
+
 /**
  * is_prime_number - finds if n is prime
  * @n: number
