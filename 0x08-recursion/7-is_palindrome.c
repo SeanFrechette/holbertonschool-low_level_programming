@@ -36,5 +36,7 @@ int helper_palindrome(char *s, int length)
 int is_palindrome(char *s)
 {
 	int length = find_length(s);
+
 	return (helper_palindrome(s, length));
 }
+
