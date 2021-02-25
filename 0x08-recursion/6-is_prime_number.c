@@ -2,7 +2,7 @@
 /**
  * is_prime - finds if n is prime
  * @n: number input
- * @i: iterator
+ * @i: iteration
  * Return: 1 if prime, 0 otherwise
  */
 int is_prime(int n, int i)
