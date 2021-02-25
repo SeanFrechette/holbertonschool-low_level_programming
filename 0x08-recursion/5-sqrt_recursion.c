@@ -14,9 +14,10 @@ int sqrtHelper(int n, int i)
     else
         return (sqrtHelper(n, i + 1));
 }
+
 /**
  * _sqrt_recursion - returns the square root of a number
- * @n: number
+ * @n: number to sqrt
  * Return: the natural square root, or -1 if n doesn't have one
  */
 int _sqrt_recursion(int n)
