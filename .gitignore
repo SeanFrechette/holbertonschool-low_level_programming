@@ -1,0 +1,5 @@
+main*.c
+*.exe
+0x08-recursion/.vscode/launch.json
+0x08-recursion/.vscode/tasks.json
+ignore/
