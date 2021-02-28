@@ -1,10 +1,4 @@
 #!/bin/bash
-for CFILES in ./*.c
-do
-gcc -c $CFILES
-done
-for OFILES in ./*.o
-do
-ar -rc $OFILES
-done
-exit 0
+gcc -c *.c
+ar -rc liball.a *.o
+ranlib liball.a
