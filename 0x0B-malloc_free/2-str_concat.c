@@ -8,7 +8,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int len1, len2, i;
+	int len1 = 1, len2 = 1, i;
 	char *arr;
 
 	if (s1 == NULL)
@@ -20,10 +20,18 @@ char *str_concat(char *s1, char *s2)
 		len2 = 0;
 	}
 
-	for (len1 = 1; s1[len1]; len1++)
-	{}
-	for (len2 = 1; s2[len2]; len2++)
-	{}
+	while (s1[len1])
+	{
+		if (len1 == 0)
+			break;
+		len1++
+	}
+	while (s2[len2])
+	{
+		if (len2 == 0)
+			break;
+		len2++
+	}
 	arr = (char*)malloc((len1 + len2) * sizeof(char));
 
 	if (arr == NULL)
