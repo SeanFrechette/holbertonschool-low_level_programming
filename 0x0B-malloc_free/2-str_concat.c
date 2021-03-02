@@ -9,6 +9,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int len1, len2, i;
+	char *arr;
 
 	if (s1 == NULL)
 	{
@@ -23,9 +24,10 @@ char *str_concat(char *s1, char *s2)
 	{}
 	for (len2 = 1; s2[len2]; len2++)
 	{}
+	arr = (char*)malloc((len1 + len2) * sizeof(char));
 
-	char *arr = (char*)malloc((len1 + len2) * sizeof(char));
-
+	if (arr == NULL)
+		return (NULL);
 	for (i = 0; i <= len1; i++)
 		arr[i] = s1[i];
 	for (i = 0; i <= len2; i++)
