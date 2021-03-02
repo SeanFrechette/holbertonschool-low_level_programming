@@ -24,13 +24,13 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (len1 == 0)
 			break;
-		len1++
+		len1++;
 	}
 	while (s2[len2])
 	{
 		if (len2 == 0)
 			break;
-		len2++
+		len2++;
 	}
 	arr = (char*)malloc((len1 + len2) * sizeof(char));
 
