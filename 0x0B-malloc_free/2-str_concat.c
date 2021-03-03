@@ -4,7 +4,7 @@
  * str_concat - concatenates two strings
  * @s1: string input 1
  * @s2: string input 2
- * Return: a pointer to the newly allocated space in memory, which contains s1 followed by s2
+ * Return: a pointer to the newly allocated space in memory
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -18,7 +18,7 @@ char *str_concat(char *s1, char *s2)
 
 	while (s1[len1])
 		len1++;
-	
+
 	while (s2[len2])
 		len2++;
 

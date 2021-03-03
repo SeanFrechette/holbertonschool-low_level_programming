@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
- * _strdup - returns a pointer to allocated memory, which contains a copy of str
+ * _strdup - returns a pointer to a copy of str
  * @str: string input
  * Return: pointer to allocated memory
  */
@@ -14,7 +14,7 @@ char *_strdup(char *str)
 		return (NULL);
 	for (len = 1; str[len]; len++)
 	{}
-	arr = (char*)malloc(len * sizeof(char));
+	arr = (char *)malloc(len * sizeof(char));
 
 	if (arr == NULL)
 		return (NULL);

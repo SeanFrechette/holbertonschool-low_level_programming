@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * create_array - creates an array of chars, which is initialized with a specific char
+ * create_array - creates an array of chars
  * @size: size of array
  * @c: char input
  * Return: NULL if size = 0, otherwise return pointer to array
@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	arr = (char*)malloc(size * sizeof(char));
+	arr = (char *)malloc(size * sizeof(char));
 
 	if (arr == NULL)
 		return (NULL);

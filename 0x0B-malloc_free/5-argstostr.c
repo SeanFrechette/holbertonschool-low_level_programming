@@ -14,7 +14,7 @@ char *argstostr(int ac, char **av)
 		n++;
 	}
 	n += 1;
-	str = (char*)malloc(n * sizeof(char));
+	str = (char *)malloc(n * sizeof(char));
 	if (str == NULL)
 		return (NULL);
 	strout = str;
