@@ -5,7 +5,7 @@
  * @s1: String input 1
  * @s2: String input 2
  * @n: num of chars to print for s2
- * Return: concatinated string
+ * Return: ar
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -21,6 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len1++;
 	while (s2[len2])
 		len2++;
+
 	arr = malloc((len1 + len2 + 1) * sizeof(char));
 	if (!arr)
 		return (NULL);
