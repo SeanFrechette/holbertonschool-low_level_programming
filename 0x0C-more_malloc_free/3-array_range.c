@@ -4,7 +4,7 @@
  * array_range - create an array that contains min-max
  * @min: min val
  * @max: max val
- * Return: 
+ * Return: array of ints, NULL if fail or min > max
  */
 int *array_range(int min, int max)
 {
