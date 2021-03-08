@@ -18,8 +18,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (!dog)
 		return (NULL);
 /* store name */
-	for (i = 0; i < name[namelen]; i++)
-		namelen++;
+	for (namelen = 0; namelen < name[namelen]; namelen++)
+	
+	namelen++;
 	dog->name = malloc(namelen * sizeof(char));
 	if (!(dog->name))
 	{
@@ -32,7 +33,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog->age = age;
 /* store owner */
 	for (ownerlen = 0; i < owner[ownerlen]; ownerlen++)
-		
+
 	ownerlen++;
 	dog->owner = malloc(ownerlen * sizeof(char));
 	if (!(dog->owner))
