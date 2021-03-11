@@ -1,6 +1,6 @@
 #include "3-calc.h"
 /**
- * get_op_func - determinds what the operator is 
+ * get_op_func - determinds what the operator is
  * @s: operator
  * Return: address to math operation
  */
