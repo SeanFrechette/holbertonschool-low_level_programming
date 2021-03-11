@@ -1,6 +1,8 @@
 #include "3-calc.h"
 /**
  * main - main function
+ * @argc: num of args
+ * @argv: args
  * Return: 0
  */
 int main(int argc, char *argv[])
