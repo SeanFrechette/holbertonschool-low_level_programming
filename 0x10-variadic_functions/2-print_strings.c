@@ -3,7 +3,6 @@
  * print_strings - prints strings
  * @separator: string printed between nums
  * @n: num of args
- * 
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
