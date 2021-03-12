@@ -1,10 +1,14 @@
-          global    main
-          extern    puts
+ global    main
 
-          section   .text
-main:                                       ; This is called by the C library startup code
-          mov       rdi, message            ; First integer (or pointer) argument in rdi
-          call      puts                    ; puts(message)
-          ret                               ; Return from main back into C library wrapper
-message:
-          db        "Hello, Holberton", 10 
+	          section   .text
+main:		  mov       rax, 1
+	          mov       rdi, 1	        ; file handle 1 is stdout
+	          mov       rsi, message    ; address of string to output
+	          mov       rdx, 17	        ; number of bytes
+	          syscall		            ; invoke operating system to do the write
+	          mov       rax, 60	        ; system call for exit
+	          xor       rdi, rdi    	; exit code 0
+	          syscall		            ; invoke operating system to exit
+
+	          section   .data
+message:	  db        "Hello, Holberton", 10
