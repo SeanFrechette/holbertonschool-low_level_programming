@@ -33,6 +33,7 @@ void print_flt(va_list arg)
 void print_str(va_list arg)
 {
 	char *output;
+	
 	output = va_arg(arg, char *);
 	printf("%s", output == NULL ? "(nil)" : output);
 }
