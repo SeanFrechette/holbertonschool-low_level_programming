@@ -4,6 +4,7 @@
  * @array: array of ints
  * @size: size of array
  * @cmp: pointer to function
+ * Return: index at first requirements met
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
