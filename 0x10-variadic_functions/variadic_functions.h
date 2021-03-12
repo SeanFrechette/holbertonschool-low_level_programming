@@ -2,6 +2,11 @@
 #define VARIADIC_FUNCTIONS_H
 #include <stdarg.h>
 #include <stdio.h>
+/**
+ * parse - determines which function to use
+ * @op: type of argument passed
+ * @f: the function associated
+ */
 typedef struct parse
 {
 	char *op;
