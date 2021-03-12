@@ -7,4 +7,4 @@ main:                                       ; This is called by the C library st
           call      puts                    ; puts(message)
           ret                               ; Return from main back into C library wrapper
 message:
-          db        "Hello, Holberton", 0 
+          db        "Hello, Holberton", 10 
