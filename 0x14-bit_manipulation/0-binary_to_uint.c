@@ -11,11 +11,11 @@ int power_func(int n, int e)
 	int count = 1;
 
 	while(count <= e)
-     {
-     	val = val * n;
-     	count++;
-     }
-     return val;
+	{
+		val = val * n;
+		count++;
+	}
+	return val;
 }
 
 /**
