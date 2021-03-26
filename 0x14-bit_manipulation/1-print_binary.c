@@ -5,7 +5,7 @@
  */
 void print_binary_rec(unsigned long int n)
 {
-	if (n != 0)	
+	if (n != 0)
 	{
 		print_binary_rec(n >> 1);
 		putchar((n & 1) ? '1' : '0');
