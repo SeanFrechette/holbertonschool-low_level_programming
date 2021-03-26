@@ -7,16 +7,17 @@
  */
 int power_func(int n, int e)
 {
-      int val = 1;
-      int count = 1;
+	int val = 1;
+	int count = 1;
 
-      while(count <= e)
-      {
-            val = val * n;
-            count++;
-      }
-      return val;
+	while(count <= e)
+     {
+     	val = val * n;
+     	count++;
+     }
+     return val;
 }
+
 /**
  * binary_to_uint - converts a binary number to an unsigned int
  * @b: binary input
